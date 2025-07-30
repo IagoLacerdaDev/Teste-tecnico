@@ -15,13 +15,11 @@ describe('Validação da Interface de Busca do Yahoo', () => {
 
     cy.log('--- INÍCIO DAS VALIDAÇÕES ---');
 
-    // Validação 1
     cy.log('VALIDAÇÃO 1: Verificando se o contêiner de resultados da busca está visível.');
     cy.get(RESULTS_CONTAINER_SELECTOR)
       .should('be.visible');
-    cy.log('-> ✅ SUCESSO: O contêiner de resultados foi exibido.');
+    cy.log('-> O contêiner de resultados foi exibido.');
 
-    // Validação 2
     cy.log('VALIDAÇÃO 2: Verificando se o título da página foi atualizado com o termo pesquisado.');
     cy.title()
       .should('include', SEARCH_TERM);

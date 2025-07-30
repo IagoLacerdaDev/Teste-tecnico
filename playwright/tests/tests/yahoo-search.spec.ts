@@ -28,6 +28,6 @@ test.describe('Validação da Interface de Busca do Yahoo por Input', () => {
     await expect(page).toHaveTitle(new RegExp(SEARCH_TERM));
     console.log('Validando o título da página...');
 
-    console.log('\nSucesso! O fluxo de busca via "Enter" foi validado.');
+    console.log('\n Sucesso! O fluxo de busca via "Enter" foi validado.');
   });
 });
